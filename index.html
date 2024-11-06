@@ -1,5 +1,31 @@
 <html>
-This is the dataset associated with the WMT2024 paper "Mitigating Metric Bias in Minimum Bayes Risk Decoding."
+<h1>Mitigating Metric Bias in Minimum Bayes Risk Decoding</h1>
+PDF for the WMT2024 paper: <a href="https://www2.statmt.org/wmt24/pdf/2024.wmt-1.109.pdf">Mitigating Metric Bias in Minimum Bayes Risk Decoding</a>
 <br><br>
-<a href="https://storage.googleapis.com/gresearch/mbr-metric-bias/mbrbias_dataset.tar.xz">Download</a>
+To cite it, use the <a href="https://www2.statmt.org/wmt24/bib/2024.wmt-1.109.bib">bibtex entry here</a> or paste it from below:
+<br><br>
+<pre>
+<code>
+@InProceedings{kovacs-deutsch-freitag:2024:WMT,
+  author    = {Kovacs, Geza  and  Deutsch, Daniel  and  Freitag, Markus},
+  title     = {Mitigating Metric Bias in Minimum Bayes Risk Decoding},
+  booktitle      = {Proceedings of the Ninth Conference on Machine Translation},
+  month          = {November},
+  year           = {2024},
+  address        = {Miami, Florida, USA},
+  publisher      = {Association for Computational Linguistics},
+  pages     = {1063--1094},
+  abstract  = {While Minimum Bayes Risk (MBR) decoding using metrics such as COMET or MetricX has outperformed traditional decoding methods such as greedy or beam search, it introduces a challenge we refer to as metric bias. As MBR decoding aims to produce translations that score highly according to a specific utility metric, this very process makes it impossible to use the same metric for both decoding and evaluation, as any improvement might simply be due to reward hacking rather than reflecting real quality improvements. In this work we demonstrate that compared to human ratings, neural metrics not only overestimate the quality of MBR decoding when the same metric is used as the utility metric, but they also overestimate the quality of MBR/QE decoding with other neural utility metrics as well. We also show that the metric bias issue can be mitigated by using an ensemble of utility metrics during MBR decoding: human evaluations show that MBR decoding using an ensemble of utility metrics outperforms a single utility metric.},
+  url       = {https://aclanthology.org/2024.wmt-1.109}
+}
+</code>
+</pre>
+<br><br>
+The dataset associated with the paper can be <a href="https://storage.googleapis.com/gresearch/mbr-metric-bias/mbrbias_dataset.tar.xz">downloaded here</a>. It is an archive containing one CSV file per langauge pair. It can be extracted via the command:
+
+<pre>
+<code>
+tar xavf mbrbias_dataset.tar.xz
+</code>
+</pre>
 </html>
